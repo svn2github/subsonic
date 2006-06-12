@@ -1,0 +1,11 @@
+# List of available locales.
+# Author: Sindre Mehus
+
+# English
+en
+
+# Norwegian
+no
+
+# Macedonian
+mk
