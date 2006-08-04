@@ -1,0 +1,206 @@
+
+PRIORITIZED FOR VERSION 2.8
+===========================
+Scroller color in Sandstorm.
+Test WAP select player on cell phone.
+Update Norwegian translation.
+
+
+DOC
+Tomcat user must have write access (see forum)
+New screenshots
+
+COMPLETED IN VERSION 2.8
+========================
+Transcoding plugin framework. (Check out Jinzora transcoding pack.)
+Transparent favicon.
+Listen for new beta releases.  Make notification configurable.
+Add transcode directory to path (in case of libraries)?
+Mouseover hover effect for truncated text.
+Show artist/album as tooltip on cover art images.
+Change MP3Parser implementation.  Include bitrate and song length in MetaData.
+Make it configurable which information to show in playlist. (appearanceSettings)
+Show artist/size/length/year/album etc in main.jsp? (Only show artist/album if multiple). Tabular layout.
+Show genre, duration and track number.
+Configurable cutoff (in format nicely). Show full text as alt?
+Tooltip.
+Detection of various artists is buggy.  Must be a bit fuzzy. (Spacing, spelling etc).
+Don't require that transcoders are installed in SUBSONIC_HOME/transcoding, but add this to PATH.  How about lame?
+Render artist as detail class in main.jsp
+Display album title in cover art image caption.
+Show file size in playlist.
+Show artist name in main.jsp if multiple artists. (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=76)
+Use LAME resampling also for VBR.  Only for Xing.
+Remove "Total" from statistics.
+Log current and latest version.
+Ask HP for a free PDA (July 5 2006)
+Ask Palm for a free phone.
+Include options to display bitrate, album, artist, year, genre, format etc in the playlist (and maybe also the main browser window)
+Ugly alignment of images and text in Opera 9.
+Exclude folders, "subsonic_exclude.txt".
+Too much whitespace above error in editTags.jsp
+New security implementation based on Acegi (http://acegisecurity.org/)
+Added form-based login.
+Added logout option.
+Support per-user language and theme.
+Added "Back in black" and "Sandstorm" themes.
+Added option to stream over plain HTTP when using SSL.
+Nicer error page.
+Springified WAP pages and servlets.
+Springify DWR.
+Springify DAO's and data source.
+Simplify <ref bean="musicFileService"/>
+
+BACKLOG
+==========
+Sort by track number.
+MusicFile cache.
+Upgrade Spring.
+Why is Player.id a String, not an Integer?
+Upload broken in IE.
+Upload popup?
+Add transcoder for cell phone etc.  aacPlus.
+Seeking.
+Display running time, as well as elapsed time for current song.
+Playback buttons.  Stop, play, pause, resume, next, previous.
+Ugly checkbox border in IE (and FF?)
+Create "Electron Blue" theme (http://www.msn.com/)
+Use cookie.setPath()?
+      cookie.setPath(request.getContextPath());
+Use AJAX to change random albums on home page, one at a time.
+Implement pure AJAX version of playlist.jsp.
+Get updated Macedonian resource bundle.
+Check Javascript error on IE.
+Photo support?
+Sandstone theme: http://www.jinzora.org/images/screens/themes/sandstone-full.gif
+Make logo in svg.
+Sell t-shirts from http://www.cafepress.com/
+User-based folder access
+Replace methods in my StringUtil with corresponding in Spring.
+Batch download of cover arts.
+Use Rico for rounded edges. http://openrico.org
+Seeking within songs.
+Test flac
+Use cewolf?
+Playlist popup window.
+Use cool coverart dialog popup (see Google Web Toolkit).
+Use dialog popup for online help.
+Make another theme with smaller fonts.
+Use detail class in home page. Make it look better.
+Make image size themeable?
+Make fancy css background for playlist toolbar.
+Use CSS overflow: auto for scrolling in playlist?
+Problems with playlist reordering etc in Firefox.
+Use Spring StringUtils.cleanPath()?
+Option to show exception details in error log.
+Quick link to "#" doesn't work.
+Should receive feedback when changing passwords, creating users etc.
+java.io.FileNotFoundException: C:\music\The Alan Parsons Project\The Best of The Alan Parsons Project\folder.jpg (Access is denied)
+Access control of players.  Avoid security hole for deleting other people's players.
+Use HTML 4.01, validate all pages.
+Create taglib for help popup.
+Make it work on Java Application Server 8.1.  (web.xml element order)
+Make it work on Geronimo.
+Make it work on Jetty
+Drop ResourceBundle_en.
+Display image embedded in ID3 tag (APIC).
+Reimplement LAME integration.
+Upload quota per user.
+Order search results.
+Specify upload directory per user. Option to delete files?
+Improve performance for new/best charts.
+Support reverse proxies.  Send url as parameter. (<a href="javascript:document.location.href='foo.jsp?referrer=' + document.location.href">Trykk her</a>)
+Support forward proxies.
+Hvis spilleren har "Auto-control enabled" skrudd av, så vises det en ny knapp "Stream" i playlista som kan brukes for å få m3u-en.
+Replace use of arrays with type-safe collections.
+"Mini" interface for phones, pda's etc.
+Create installer for Windows. http://nsis.sourceforge.net
+Message system (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=24)
+Longer log file. Option to not display DEBUG lines in help.jsp.
+Kant rundt hele vinduet, som i forum.
+Always show playlist menu.
+Let number of columns be dynamic in home page.
+Performance monitoring.
+Use MusicFile.isAlbum()
+Simplify new/random in SearchService.
+If the album-name contains an apostrof ( ' ), then I get an error when I search for cover-art
+Keep statistics for players on reconnect. You might have noticed that the bandwidth chart is reset if a player reconnects. I would like to keep bandwidth statistics for a while even if a player reconnects.
+Provide links to podcast, settings, help, message board, wishlist on home page.
+New icon for wap.
+Check that multi-discs are not included in random and newest albums.  Change implementation of isAlbum.
+Mark music_file_info as disabled if path doesn't exist.
+Integrate Windows Media Player in web page.
+Fetch current version asynchronously.
+UPnP
+Show list of active users.
+Register at myprogs.net
+Link to Pandora (http://blog.pandora.com/faq/index.html#92)
+Check Jinzora features. http://www.jinzora.com/pages.php?pn=developers&sub=changelog
+Add Cancel button to Save Playlist.
+Håndtere galt format samt manglende filer i playlister.
+Håndtere playere med navn som ikke er iht httpurl.
+Rydd opp i http-parameternavn.
+Gjøre sidene XHTML-kompatibel.
+Validaton of index specification.
+Make playlist loading more robust.  (Fails on url's, for instance.)
+Make PDA skin.
+Bug: Going back adds songs to playlist multiple times.
+Quiz
+Emulator 3G-telefon
+XHTML Mobile Profile
+Add mp3-player as applet.
+Vise lengde på sanger. Lag tabell med all info?
+Automatisk finne lyrics-ting.
+Parse tags for wma, ogg osv.
+Show year and track length.
+No SHOUTcast if playlist is empty.
+i18n of enums.
+http://www.freeware-guide.com/dir/audio/streaming.html -> Registrert 10. mai 2005
+Option to create structure based on tags.
+Zip and unzip fails with accented characters.  Use commons vfs, or some other lib.
+Log when zipping individual files.
+Proper detection of VBR.
+Add online help to search index update.
+Svitsje til automatisk "now playing" etter en stund med inaktivitet?
+Registrere på http://directory.fsf.org/ [Registrert 14.06.2005]
+Show/use genre tag
+Create image cache.
+Specify context path.
+HDTV-mode.
+Vis "lignende" album.
+Add "Play" authorization.
+Add performance monitoring.
+User-Specific Ratings and Comments (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=86)
+
+HOW TO RELEASE
+-------------
+Update version number in pom.xml etc.
+mvn clean install
+mvn assembly:assembly
+mv target/subsonic-2.7-bin.zip target/subsonic-2.7.zip
+Deploy
+Check that correct local version is displayed.
+Commit
+Create file release at SourceForge.
+mvn site:site
+mvn site:deploy
+svn copy https://svn.sourceforge.net/svnroot/subsonic/trunk https://svn.sourceforge.net/svnroot/subsonic/tags/release-2.7.beta1 -m "Tagging 2.7.beta1."
+Register at freshmeat.
+Update version number in pom.xml etc.
+
+XMLTV
+=====
+Legge jxmltv ut på sourceforge.
+Støtte alle kanaler på dagenstv.com.
+Støtte sommertid.
+Enklere konfigurasjon av hvilke kanaler som skal tas med.
+Endre navn til xmltv_no eller noe.
+
+OK - WMA9, Quality-based VBR Q75, Atlantic
+OK - OGG, Quality-based VBR Q3, Is It Any Wonder
+OK - MPEG-4, Quality-based VBR Normal, Nothing In My Way
+OK - MPC radio, Leaving So Soon
+OK - FLAC Lossless, A Bad Dream
+OK - Monkey Lossless (ape), Hamburg Song
+OK - Frog Lossless, Put It Behind You
+
