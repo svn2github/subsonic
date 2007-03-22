@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+    <!-- DAO's -->
+
+    <bean id="playerDao" class="net.sourceforge.subsonic.dao.PlayerDao">
+        <property name="daoHelper" ref="daoHelper"/>
+    </bean>
+
+    <bean id="internetRadioDao" class="net.sourceforge.subsonic.dao.InternetRadioDao">
+        <property name="daoHelper" ref="daoHelper"/>
+    </bean>
+
+    <bean id="musicFileInfoDao" class="net.sourceforge.subsonic.dao.MusicFileInfoDao">
+        <property name="daoHelper" ref="daoHelper"/>
+    </bean>
+
+    <bean id="musicFolderDao" class="net.sourceforge.subsonic.dao.MusicFolderDao">
+        <property name="daoHelper" ref="daoHelper"/>
+    </bean>
+
+    <bean id="userDao" class="net.sourceforge.subsonic.dao.UserDao">
+        <property name="daoHelper" ref="daoHelper"/>
+    </bean>
+
+    <bean id="transcodingDao" class="net.sourceforge.subsonic.dao.TranscodingDao">
+        <property name="daoHelper" ref="daoHelper"/>
+    </bean>
+
+    <bean id="daoHelper" class="net.sourceforge.subsonic.dao.DaoHelper"/>
+
+
+    <!-- Services -->
+
+    <bean id="musicFileService" class="net.sourceforge.subsonic.service.MusicFileService" init-method="init">
+        <property name="securityService" ref="securityService"/>
+        <property name="settingsService" ref="settingsService"/>
+    </bean>
+
+    <bean id="securityService" class="net.sourceforge.subsonic.service.SecurityService">
+        <property name="settingsService" ref="settingsService"/>
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean id="settingsService" class="net.sourceforge.subsonic.service.SettingsService" init-method="init">
+        <property name="internetRadioDao" ref="internetRadioDao"/>
+        <property name="musicFolderDao" ref="musicFolderDao"/>
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean id="searchService" class="net.sourceforge.subsonic.service.SearchService" init-method="schedule">
+        <property name="settingsService" ref="settingsService"/>
+        <property name="securityService" ref="securityService"/>
+        <property name="musicFileService" ref="musicFileService"/>
+    </bean>
+
+    <bean id="playerService" class="net.sourceforge.subsonic.service.PlayerService">
+        <property name="playerDao" ref="playerDao"/>
+        <property name="statusService" ref="statusService"/>
+        <property name="securityService" ref="securityService"/>
+    </bean>
+
+    <bean id="playlistService" class="net.sourceforge.subsonic.service.PlaylistService">
+        <property name="settingsService" ref="settingsService"/>
+        <property name="securityService" ref="securityService"/>
+        <property name="musicFileService" ref="musicFileService"/>
+    </bean>
+
+    <bean id="versionService" class="net.sourceforge.subsonic.service.VersionService"/>
+
+    <bean id="statusService" class="net.sourceforge.subsonic.service.StatusService"/>
+
+    <bean id="musicInfoService" class="net.sourceforge.subsonic.service.MusicInfoService">
+        <property name="musicFileInfoDao" ref="musicFileInfoDao"/>
+        <property name="musicFileService" ref="musicFileService"/>
+    </bean>
+
+    <bean id="amazonSearchService" class="net.sourceforge.subsonic.service.AmazonSearchService"/>
+
+    <bean id="audioScrobblerService" class="net.sourceforge.subsonic.service.AudioScrobblerService">
+        <property name="settingsService" ref="settingsService"/>
+    </bean>
+
+    <bean id="transcodingService" class="net.sourceforge.subsonic.service.TranscodingService">
+        <property name="transcodingDao" ref="transcodingDao"/>
+        <property name="settingsService" ref="settingsService"/>
+    </bean>
+
+    <bean id="adService" class="net.sourceforge.subsonic.service.AdService">
+        <property name="adInterval" value="5"/>
+        <property name="adReferrers">
+            <list>
+                <value>http://subsonic.sourceforge.net/</value>
+                <value>http://allmusic.com/</value>
+                <value>http://www.last.fm/</value>
+                <value>http://www.amazon.com/</value>
+                <value>http://www.redhat.com/</value>
+                <value>http://www.playstation.com/</value>
+                <value>http://www.pcmag.com/</value>
+                <value>http://www.activeobjects.no/subsonic/forum/</value>
+                <value>http://www.divx.com/</value>
+                <value>http://www.pcgamer.com/</value>
+                <value>http://www.slimdevices.com/</value>
+                <value>http://www.whathifi.com/</value>
+                <value>http://www.rollingstone.com/</value>
+                <value>http://music.aol.com/</value>
+                <value>http://www.winamp.com/</value>
+                <value>http://www.linux.org/</value>
+                <value>http://www.garmin.com/</value>
+                <value>http://www.pcworld.com/</value>
+                <value>http://www.apple.com/itunes/</value>
+                <value>http://www.imdb.com/</value>
+                <value>http://www.bmw.com/</value>
+                <value>http://www.sonyericsson.com/</value>
+                <value>http://www.toyota.com/</value>
+                <value>http://www.mtv.com/</value>
+                <value>http://www.jinzora.org/</value>
+                <value>http://www.meedio.com/</value>
+                <value>http://music.msn.com/</value>
+                <value>http://www.cheapbooks.com/</value>
+                <value>http://www.nokia.com/</value>
+                <value>http://www.playboy.com/</value>
+                <value>http://www.allofmp3.com/</value>
+                <value>http://www.mp3.com/</value>
+                <value>http://www.napster.com/</value>
+                <value>http://www.debian.org/</value>
+                <value>http://www.freenas.org/</value>
+                <value>http://www.microsoft.com/</value>
+                <value>http://www.gpsworld.com/</value>
+                <value>http://www.sony.com/</value>
+                <value>http://www.xbox.com/</value>
+                <value>http://www.hdtvmagazine.com/</value>
+                <value>http://www.hdtvuk.tv/</value>
+                <value>http://www.skype.com/</value>
+                <value>http://www.pandora.com/</value>
+                <value>http://www.blogger.com/</value>
+                <value>http://www.laptopmag.com/</value>
+                <value>http://www.digitalcamera-hq.com/</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- AJAX services -->
+
+    <bean id="ajaxNowPlayingService" class="net.sourceforge.subsonic.ajax.NowPlayingService">
+        <property name="playerService" ref="playerService"/>
+    </bean>
+
+    <bean id="ajaxTagService" class="net.sourceforge.subsonic.ajax.TagService">
+        <property name="musicFileService" ref="musicFileService"/>
+    </bean>
+
+    <bean id="ajaxTransferService" class="net.sourceforge.subsonic.ajax.TransferService"/>
+
+</beans>
