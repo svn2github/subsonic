@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE dwr PUBLIC
+        "-//GetAhead Limited//DTD Direct Web Remoting 1.0//EN"
+        "http://www.getahead.ltd.uk/dwr/dwr10.dtd">
+
+<dwr>
+    <allow>
+
+        <create creator="spring" javascript="nowPlayingService">
+            <param name="beanName" value="ajaxNowPlayingService"/>
+        </create>
+
+        <create creator="spring" javascript="lyricsService">
+            <param name="beanName" value="ajaxLyricsService"/>
+        </create>
+
+        <create creator="spring" javascript="tagService">
+            <param name="beanName" value="ajaxTagServiceSecure"/>
+        </create>
+
+        <create creator="spring" javascript="transferService">
+            <param name="beanName" value="ajaxTransferServiceSecure"/>
+        </create>
+
+        <convert converter="bean" match="net.sourceforge.subsonic.ajax.UploadInfo"/>
+        <convert converter="bean" match="net.sourceforge.subsonic.ajax.NowPlayingInfo"/>
+        <convert converter="bean" match="net.sourceforge.subsonic.ajax.LyricsInfo"/>
+
+    </allow>
+</dwr>
