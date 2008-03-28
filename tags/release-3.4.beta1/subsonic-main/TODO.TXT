@@ -1,0 +1,233 @@
+TODO IN 3.4
+===========
+Party mode: online help
+Create jar download.
+Log error if subsonic.war not found.
+
+FLEX TODO
+=========
+Use flashvars to tell base url.
+Fix wrapper HTML
+Create Back button.
+
+BACKLOG
+===========================
+Add Wikipedia support.
+Add Wikipedia and Google icon on album page.
+Implement LastModified in main.jsp (Must test on FF).  Must add timestamp on music_file_info. Problem with cover art scheme.
+Double-write genres? http://www.activeobjects.no/subsonic/forum/viewtopic.php?p=2245
+Party mode: Go into random mode if the playlist is finished.
+Create per-channel podcast settings. At least enable/disable.
+Retag track number in podcasts. http://www.activeobjects.no/subsonic/forum/viewtopic.php?p=2003
+Make background image repeat in x-direction?
+Use YUI menus: http://developer.yahoo.com/yui/menu/
+Spacing in home.jsp
+Use em instead of pt when padding.
+DAAP support. http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=976
+Random radio mode (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=964)
+Option for unlimited download/upload if on LAN.  Remember to support proxies.
+Integrate with Amazon mp3.
+Make some features available to donors only.
+Caching bug, selected music folder.  At least in IE and FF.
+RejectedExecutionHandler handling in ThreadPoolExecutor constructor.
+Norwegian translation
+Precompile JSPs for Dekoh. Separate modules "subsonic-precompiled-jetty" and "subsonic-precompiled-dekoh".
+Fix javascript error in playlist in IE.
+Display the sub folder count next to the artist folder (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=905)
+Facebook integration
+Artist-level comments.
+Show/Hide Podcast channel description (e.g., Java Posse)
+Show mini coverarts "Next/Prev Album".
+Avatar support.
+Improve Flash player.
+Add check for admin rights in installer.
+Add "play count" to Podcasts.
+ASX (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=638)
+Make it possible to cancel/resume Podcast downloads. ("Cancel selected")
+Select all in textfield for settings image url (and other textfields?)
+Remove stream status after end of playlist is reached.
+Ajax-ify Amazon pages.
+Wrong progress for http://atvs.vg.no/script/podcast.php?category_id=7
+Resumable Podcast downloads.
+"Random" very slow when no music folders.
+Merge artists with same name, but different music folders.
+Test if dwr javascripts are cached in browser (especially for "now playing")
+Better IE support in playlist checkbox stuff. Instead of disabling (which isn't supported in IE, set font color to gray).
+Test playlist checkbox stuff, in particular download auth.
+Move "logout" under search search field.
+Reformat all java code.
+Append selected tracks to previously saved playlist (bring up dialog for selecting).
+Save playlists in database?  Access rights.
+Check out non-Latin ID3 problem (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=527)
+Track titles that begin with numbers (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=170) (For instance "13 humler")
+Fault-tolerant transcoding FLAC>MP3 (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=545)
+Drag'n'drop in playlist.
+Fix description in Freshmeat.
+ID3 problems (http://www.activeobjects.no/subsonic/forum/viewtopic.php?p=952#952)
+Make sure podcast works with playlist names with non-latin chars.
+Test Google Web Toolkit?
+Show next/prev 100 hits.
+Podcast receiver.
+Create checkbox and combobox menu in main.jsp.
+FLAC > OGG audioscrobbling problem (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=597)
+Support MUSICBRAINZ_TRACKID (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=597)
+Check out http://www.javazoom.net/jlgui/jnlp_configurator.jsp
+Check out asx/asf: http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=638
+Make podcast work in iTunes.
+Longer cache expiry period for images.
+RSS feed for newest content.
+Rename "Appearance" settings to "Personal".
+Web proxy support (for audioscrobbler, amazon etc)?
+Missing refresh when changing from no cover art.
+Resolve problem with MetaData NullPointerException. http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=112
+Don't show empty statistics.
+AJAX error dialog from Dave.
+Transcode download
+Remove "user" column from status.jsp?
+Sometimes a song is started twice. Two m3u's sent?
+Profiling (http://www.yourkit.com/)
+Lucene?
+Invalidate browser cache when changing cover art image.
+Show list of currently active users.
+http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=94
+Mails from Dave (IP change problem).
+Get link from https://jaudiotagger.dev.java.net/
+Why is Player.id a String, not an Integer?
+Upload broken in IE.
+Upload popup?
+Add transcoder for cell phone etc.  aacPlus.
+Seeking.
+Display running time, as well as elapsed time for current song.
+Playback buttons.  Stop, play, pause, resume, next, previous.
+Create "Electron Blue" theme (http://www.msn.com/) Startour?
+Use cookie.setPath()?
+      cookie.setPath(request.getContextPath());
+Use AJAX to change random albums on home page, one at a time.
+Implement pure AJAX version of playlist.jsp.
+Get updated Macedonian resource bundle.
+Check Javascript error on IE.
+Photo support?
+User-based folder access
+Replace methods in my StringUtil with corresponding in Spring.
+Batch download of cover arts.
+Use Rico for rounded edges. http://openrico.org
+Use cewolf?
+Playlist popup window.
+Use cool coverart dialog popup (see Google Web Toolkit).
+Use dialog popup for online help.
+Make another theme with smaller fonts.
+Make image size themeable?
+Make fancy css background for playlist toolbar.
+Use CSS overflow: auto for scrolling in playlist?
+Use Spring StringUtils.cleanPath()?
+Option to show exception details in error log.
+Quick link to "#" doesn't work.
+Should receive feedback when changing passwords, creating users etc.
+java.io.FileNotFoundException: C:\music\The Alan Parsons Project\The Best of The Alan Parsons Project\folder.jpg (Access is denied)
+Access control of players.  Avoid security hole for deleting other people's players.
+Use HTML 4.01, validate all pages.
+Create taglib for help popup.
+Make it work on Java Application Server 8.1.  (web.xml element order)
+Make it work on Geronimo.
+Make it work on Jetty
+Drop ResourceBundle_en.
+Upload quota per user.
+Specify upload directory per user. Option to delete files?
+Support reverse proxies.  Send url as parameter. (<a href="javascript:document.location.href='foo.jsp?referrer=' + document.location.href">Trykk her</a>)
+Support forward proxies.
+Hvis spilleren har "Auto-control enabled" skrudd av, så vises det en ny knapp "Stream" i playlista som kan brukes for å få m3u-en.
+Replace use of arrays with type-safe collections.
+"Mini" interface for phones, pda's etc.
+Create installer for Windows. http://nsis.sourceforge.net
+Message system (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=24)
+Longer log file. Option to not display DEBUG lines in help.jsp.
+Kant rundt hele vinduet, som i forum.
+Always show playlist menu.
+Let number of columns be dynamic in home page.
+Performance monitoring.
+Use MusicFile.isAlbum()
+Simplify new/random in SearchService.
+If the album-name contains an apostrof ( ' ), then I get an error when I search for cover-art
+Provide links to podcast, settings, help, message board, wishlist on home page.
+New icon for wap.
+Check that multi-discs are not included in random and newest albums.  Change implementation of isAlbum.
+Integrate Windows Media Player in web page.
+Fetch current version asynchronously.
+UPnP
+Register at myprogs.net
+Link to Pandora (http://blog.pandora.com/faq/index.html#92)
+Check Jinzora features. http://www.jinzora.com/pages.php?pn=developers&sub=changelog
+Add Cancel button to Save Playlist.
+Håndtere galt format samt manglende filer i playlister.
+Håndtere playere med navn som ikke er iht httpurl.
+Rydd opp i http-parameternavn.
+Gjøre sidene XHTML-kompatibel.
+Validaton of index specification.
+Make playlist loading more robust.  (Fails on url's, for instance.)
+Make PDA skin.
+Bug: Going back adds songs to playlist multiple times.
+Quiz
+Emulator 3G-telefon
+XHTML Mobile Profile
+Add mp3-player as applet.
+Automatisk finne lyrics-ting.
+Parse tags for wma etc.
+No SHOUTcast if playlist is empty.
+i18n of enums.
+http://www.freeware-guide.com/dir/audio/streaming.html -> Registrert 10. mai 2005
+Option to create structure based on tags.
+Zip and unzip fails with accented characters.  Use commons vfs, or some other lib.
+Log when zipping individual files.
+Add online help to search index update.
+Vis "lignende" album.
+Add "Play" authorization.
+
+HOW TO RELEASE
+===============================
+Set JAVA_HOME to 1.5.
+Update version number in pom.xml etc.
+mvn clean install
+cd subsonic-assembly
+mvn assembly:assembly
+mv target/subsonic-2.7-bin.zip target/subsonic-2.7.zip
+Deploy
+Check that correct local version is displayed.
+Commit
+Create file release at SourceForge. Use passive FTP to upload files.
+Remember to upload .exe installer.
+cd subsonic-site
+mvn site:site
+mvn site:deploy
+svn copy https://subsonic.svn.sourceforge.net/svnroot/subsonic/trunk https://subsonic.svn.sourceforge.net/svnroot/subsonic/tags/release-2.7.beta1 -m "Tagging 2.7.beta1."
+Register at freshmeat.
+Post message on forum.
+Update version number in pom.xml etc.
+Take backup of forum.
+
+HOW TO RELEASE TRANSCODING PACK
+===============================
+Create transcode_windows.zip
+scp transcode_windows.zip sindre_mehus@shell.sourceforge.net:/home/groups/s/su/subsonic/htdocs
+(doesn't work inside XEmacs)
+
+XMLTV
+=====
+Legge jxmltv ut på sourceforge.
+Støtte alle kanaler på dagenstv.com.
+Støtte sommertid.
+Enklere konfigurasjon av hvilke kanaler som skal tas med.
+Endre navn til xmltv_no eller noe.
+
+TEST DATA
+=========
+WMA9, Quality-based VBR Q75, Atlantic
+OGG, Quality-based VBR Q3, Is It Any Wonder
+MPEG-4, Quality-based VBR Normal, Nothing In My Way
+MPC radio, Leaving So Soon
+FLAC Lossless, A Bad Dream
+Monkey Lossless (ape), Hamburg Song
+Frog Lossless, Put It Behind You
+
+MISCELLANEOUS
+=============
+openclipart.org
