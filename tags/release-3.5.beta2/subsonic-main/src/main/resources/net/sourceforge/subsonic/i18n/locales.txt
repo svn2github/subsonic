@@ -1,0 +1,29 @@
+# List of available locales.
+# Author: Sindre Mehus
+
+# English
+en
+
+# French
+fr
+
+# Spanish
+es
+
+# German
+de
+
+# Dutch
+nl
+
+# Norwegian
+no
+
+# Macedonian
+mk
+
+# Russian
+ru
+
+# Simplified Chinese
+zh_CN
