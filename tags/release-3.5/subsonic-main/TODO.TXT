@@ -1,0 +1,344 @@
+TODO IN WEB
+------------
+Add Ripserver ad.
+Ads, https://www.valueclickmedia.com/login.shtml
+Refactor included php's.  Create template.php?
+
+TODO IN 3.5
+---------------
+Remove ad from web page.
+Change license to non-commercial (like http://www.jeroenwijering.com/?item=JW_FLV_Media_Player)
+
+Stop subsonic.exe if it's running
+Service uninstall doesn't work.
+Start Subsonic automatically after install.
+Change Getting Started.
+Log stderr.
+Optionally put in startup folder.
+
+
+GUEST USER / DEMO MODE
+----------------------
+New authorization role "User is allowed to change settings and passwords".
+Should not be able to change player settings, nor select other players in combobox.
+Must gather free music collection + podcasts + internet radio
+http://en.wikipedia.org/wiki/Free_music
+http://ugress.com/media_music_eps.asp
+http://ugress.com/media_music_cowboy.asp
+http://www.johndoe.no/media.php
+Write forum tutorial of how to set it up, including auto-login.
+Get broadband subscription
+Get Ripserver unit
+Get funding from Ripfactory
+
+JW Player
+-------------
+APPEND TO PLAYLIST: http://www.jeroenwijering.com/?thread=13648
+Frame control: http://home5.inet.tele.dk/nyboe/flash/mediaplayer/crossframecontrol.htm
+Test VBR
+MOVING PLAYLIST ITEMS UP/DOWN, ADD TO PLAYLIST: http://www.jeroenwijering.com/?thread=13307
+Use latest version of http://code.google.com/p/swfobject/
+
+TODO IN 3.6
+-----------
+Replace Flash player.
+Demo mode.
+Configurable Welcome title, subtitle and message in home page. Use wiki notation.
+Random play on artist level. http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=1304
+Append selected tracks to previously saved playlist (bring up dialog for selecting).
+Sort albums by year. (And show year). getCoverArt() should be made non-recursive. http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=1075
+Tag editing breaks embedded cover art. http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=1305
+Double-write tag info? http://www.activeobjects.no/subsonic/forum/viewtopic.php?p=2245
+
+
+BACKLOG
+==========================
+Avoid logging of DWR stuff. Add logging from Subsonic service.
+Create tutorial of how to build from source.
+Backlink to Ripserver home page, when using the Ripserver theme.
+Permalink support?
+After logon, go to originally requested page.
+Fix broken SSL, http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=1301
+Simplify URL rewriting. Always use relative links if that works.
+Vista icon problem
+Log error if podcast delete file doesn't succeed.
+Podcast duplicate files. nrk_verdt_aa_vite_2008-0820-1203_24459.mp3 + nrk_verdt_aa_vite_2008-0820-1203_244590.mp3
+User/music folder authorization.
+Show percent complete for translations.  In web page at least.
+Improve getting started.
+Require Java 6 in exe4j.
+Make Now Playing show for some minimum amount of time.
+Create subsonic.bat
+Look at maven release plugin.
+Include getting started (html) in installer.  And add it to start menu. Also create link to subsonic home page in Start menu.
+last.fm problem. http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=1278
+Show total playlist duration.
+Remove player dynamic ip property?
+Improve help popup.
+  o Create taglib?
+  o http://home.comcast.net/~jscheuer1/side/mybox/
+  o http://www.nickstakenburg.com/projects/prototip2/
+Artist-level comments (see forum)
+GUI for toggling jukebox mode.
+Make contiuous random mode work in jukebox mode.
+Make repeat work in jukebox mode.
+Make xxx work in jukebox mode.
+Should everybody be allowed to enable jukebox mode?
+Upgrade to Spring Security.
+Proper jukebox support. Check out jlayer. and see how jinzora does it. http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=1188
+iPod/iPhone support.
+   http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=1200
+   http://www.alloysoft.com/
+   http://developer.apple.com/webapps
+   http://developer.apple.com/internet/webcontent/bestwebdev.html
+Remove Mock/Debug options from JME player.
+Bundle with open-source UPnP app?
+Uninstaller should optionally delete c:\subsonic
+Nicer popup for lyrics and online help.
+Add option for one player per user http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=1255
+Add volume control to jme player.
+Add volume control to jukebox player.
+Verify that LastModified works for avatars.
+Create per-channel podcast settings. At least enable/disable.
+Should make it possible to retrieve avatars without reading the binary column.
+Per-song rating.
+Use filter for subsonic version in site xml's.
+Add download/upload speedometer.
+Implement LastModified in main.jsp (Must test on FF).  Must add timestamp on music_file_info. Problem with cover art scheme.
+Party mode: Go into random mode if the playlist is finished.
+Retag track number in podcasts. http://www.activeobjects.no/subsonic/forum/viewtopic.php?p=2003
+Make background image repeat in x-direction?
+Use YUI menus: http://developer.yahoo.com/yui/menu/
+Spacing in home.jsp
+Use em instead of pt when padding.
+DAAP support. http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=976
+Random radio mode (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=964)
+Option for unlimited download/upload if on LAN.  Remember to support proxies.
+Integrate with Amazon mp3.
+Make some features available to donors only.
+Caching bug, selected music folder.  At least in IE and FF.
+RejectedExecutionHandler handling in ThreadPoolExecutor constructor.
+Precompile JSPs for Dekoh. Separate modules "subsonic-precompiled-jetty" and "subsonic-precompiled-dekoh".
+Fix javascript error in playlist in IE.
+Display the sub folder count next to the artist folder (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=905)
+Facebook integration
+Show/Hide Podcast channel description (e.g., Java Posse)
+Show mini coverarts "Next/Prev Album".
+Add check for admin rights in installer.
+Add "play count" to Podcasts.
+ASX (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=638)
+Make it possible to cancel/resume Podcast downloads. ("Cancel selected")
+Select all in textfield for settings image url (and other textfields?)
+Remove stream status after end of playlist is reached.
+Ajax-ify Amazon pages.
+Wrong progress for http://atvs.vg.no/script/podcast.php?category_id=7
+Resumable Podcast downloads.
+"Random" very slow when no music folders.
+Test if dwr javascripts are cached in browser (especially for "now playing")
+Better IE support in playlist checkbox stuff. Instead of disabling (which isn't supported in IE, set font color to gray).
+Test playlist checkbox stuff, in particular download auth.
+Move "logout" under search search field.
+Reformat all java code.
+Save playlists in database?  Access rights.
+Check out non-Latin ID3 problem (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=527)
+Track titles that begin with numbers (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=170) (For instance "13 humler")
+Fault-tolerant transcoding FLAC>MP3 (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=545)
+Drag'n'drop in playlist.
+Fix description in Freshmeat.
+ID3 problems (http://www.activeobjects.no/subsonic/forum/viewtopic.php?p=952#952)
+Make sure podcast works with playlist names with non-latin chars.
+Test Google Web Toolkit?
+Show next/prev 100 hits.
+Create checkbox and combobox menu in main.jsp.
+FLAC > OGG audioscrobbling problem (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=597)
+Support MUSICBRAINZ_TRACKID (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=597)
+Check out http://www.javazoom.net/jlgui/jnlp_configurator.jsp
+Check out asx/asf: http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=638
+Make podcast work in iTunes.
+Longer cache expiry period for images.
+RSS feed for newest content.
+Web proxy support (for audioscrobbler, amazon etc)?
+Missing refresh when changing from no cover art.
+Resolve problem with MetaData NullPointerException. http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=112
+Don't show empty statistics.
+AJAX error dialog from Dave.
+Remove "user" column from status.jsp?
+Sometimes a song is started twice. Two m3u's sent?
+Profiling (http://www.yourkit.com/)
+Lucene?
+Invalidate browser cache when changing cover art image.
+http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=94
+Mails from Dave (IP change problem).
+Why is Player.id a String, not an Integer?
+Upload broken in IE.
+Upload popup?
+Add transcoder for cell phone etc.  aacPlus.
+Seeking.
+Display running time, as well as elapsed time for current song.
+Playback buttons.  Stop, play, pause, resume, next, previous.
+Create "Electron Blue" theme (http://www.msn.com/) Startour?
+Use cookie.setPath()?
+      cookie.setPath(request.getContextPath());
+Use AJAX to change random albums on home page, one at a time.
+Implement pure AJAX version of playlist.jsp.
+Check Javascript error on IE.
+Photo support?
+User-based folder access
+Replace methods in my StringUtil with corresponding in Spring.
+Batch download of cover arts.
+Use Rico for rounded edges. http://openrico.org
+Use cewolf?
+Use dialog popup for online help.
+Make another theme with smaller fonts.
+Make fancy css background for playlist toolbar.
+Use CSS overflow: auto for scrolling in playlist?
+Use Spring StringUtils.cleanPath()?
+Option to show exception details in error log.
+Quick link to "#" doesn't work.
+Should receive feedback when changing passwords, creating users etc.
+java.io.FileNotFoundException: C:\music\The Alan Parsons Project\The Best of The Alan Parsons Project\folder.jpg (Access is denied)
+Use HTML 4.01, validate all pages.
+Create taglib for help popup.
+Make it work on Java Application Server 8.1.  (web.xml element order)
+Make it work on Geronimo.
+Drop ResourceBundle_en.
+Upload quota per user.
+Specify upload directory per user. Option to delete files?
+Support reverse proxies.  Send url as parameter. (<a href="javascript:document.location.href='foo.jsp?referrer=' + document.location.href">Trykk her</a>)
+Support forward proxies.
+Hvis spilleren har "Auto-control enabled" skrudd av, så vises det en ny knapp "Stream" i playlista som kan brukes for å få m3u-en.
+Replace use of arrays with type-safe collections.
+"Mini" interface for phones, pda's etc.
+Message system (http://www.activeobjects.no/subsonic/forum/viewtopic.php?t=24)
+Longer log file. Option to not display DEBUG lines in help.jsp.
+Kant rundt hele vinduet, som i forum.
+Always show playlist menu.
+Let number of columns be dynamic in home page.
+Performance monitoring.
+Use MusicFile.isAlbum()
+Simplify new/random in SearchService.
+If the album-name contains an apostrof ( ' ), then I get an error when I search for cover-art
+Provide links to podcast, settings, help, message board, wishlist on home page.
+Check that multi-discs are not included in random and newest albums.  Change implementation of isAlbum.
+Integrate Windows Media Player in web page.
+Fetch current version asynchronously.
+UPnP
+Register at myprogs.net
+Link to Pandora (http://blog.pandora.com/faq/index.html#92)
+Check Jinzora features. http://www.jinzora.com/pages.php?pn=developers&sub=changelog
+Add Cancel button to Save Playlist.
+Håndtere galt format samt manglende filer i playlister.
+Håndtere playere med navn som ikke er iht httpurl.
+Rydd opp i http-parameternavn.
+Gjøre sidene XHTML-kompatibel.
+Validaton of index specification.
+Make playlist loading more robust.  (Fails on url's, for instance.)
+Make PDA skin.
+Bug: Going back adds songs to playlist multiple times.
+Quiz
+Emulator 3G-telefon
+XHTML Mobile Profile
+Add mp3-player as applet.
+Parse tags for wma etc.
+No SHOUTcast if playlist is empty.
+i18n of enums.
+http://www.freeware-guide.com/dir/audio/streaming.html -> Registrert 10. mai 2005
+Option to create structure based on tags.
+Zip and unzip fails with accented characters.  Use commons vfs, or some other lib.
+Log when zipping individual files.
+Add online help to search index update.
+Vis "lignende" album.
+
+HOW TO RELEASE
+===============================
+Set JAVA_HOME to 1.6.
+Update version number in pom.xml etc.
+mvn clean install -P full
+cd subsonic-assembly
+mvn assembly:assembly
+Deploy
+Check that correct local version is displayed.
+Commit
+Upload files to SourceForge (in separate shell).
+  rsync -avP -e ssh subsonic-assembly/target/*   sindre_mehus@frs.sourceforge.net:uploads/
+  rsync -avP -e ssh subsonic-installer/target/*  sindre_mehus@frs.sourceforge.net:uploads/
+Create file release at SourceForge.
+Upload site:
+  rsync -avP -e ssh --exclude .svn subsonic-web/  sindre_mehus,subsonic@web.sourceforge.net:htdocs/
+
+svn copy https://subsonic.svn.sourceforge.net/svnroot/subsonic/trunk https://subsonic.svn.sourceforge.net/svnroot/subsonic/tags/release-2.7.beta1 -m "Tagging 2.7.beta1."
+Register at freshmeat.
+Post message on forum.
+Update version number in pom.xml etc.
+Take backup of forum.
+
+HOW TO RELEASE TRANSCODING PACK
+===============================
+Create transcode_windows.zip and release it in SourceForge FRS.
+
+XMLTV
+=====
+Legge jxmltv ut på sourceforge.
+Støtte alle kanaler på dagenstv.com.
+Støtte sommertid.
+Enklere konfigurasjon av hvilke kanaler som skal tas med.
+Endre navn til xmltv_no eller noe.
+
+TEST DATA
+=========
+WMA9, Quality-based VBR Q75, Atlantic
+OGG, Quality-based VBR Q3, Is It Any Wonder
+MPEG-4, Quality-based VBR Normal, Nothing In My Way
+MPC radio, Leaving So Soon
+FLAC Lossless, A Bad Dream
+Monkey Lossless (ape), Hamburg Song
+Frog Lossless, Put It Behind You
+
+MISCELLANEOUS
+=============
+openclipart.org
+http://www.nero.com/eng/nero-aac-codec.html
+
+Error when downloading "Samples".
+java.lang.NullPointerException
+	at org.acegisecurity.ui.ExceptionTranslationFilter.handleException(ExceptionTranslationFilter.java:229)
+	at org.acegisecurity.ui.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:176)
+	at org.acegisecurity.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:275)
+	at org.acegisecurity.providers.anonymous.AnonymousProcessingFilter.doFilter(AnonymousProcessingFilter.java:125)
+	at org.acegisecurity.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:275)
+	at org.acegisecurity.ui.rememberme.RememberMeProcessingFilter.doFilter(RememberMeProcessingFilter.java:142)
+	at org.acegisecurity.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:275)
+	at org.acegisecurity.wrapper.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:81)
+	at org.acegisecurity.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:275)
+	at org.acegisecurity.ui.basicauth.BasicProcessingFilter.doFilter(BasicProcessingFilter.java:173)
+	at org.acegisecurity.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:275)
+	at org.acegisecurity.ui.AbstractProcessingFilter.doFilter(AbstractProcessingFilter.java:271)
+	at org.acegisecurity.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:275)
+	at org.acegisecurity.ui.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.acegisecurity.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:275)
+	at org.acegisecurity.context.HttpSessionContextIntegrationFilter.doFilter(HttpSessionContextIntegrationFilter.java:249)
+	at org.acegisecurity.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:275)
+	at org.acegisecurity.util.FilterChainProxy.doFilter(FilterChainProxy.java:149)
+	at org.acegisecurity.util.FilterToBeanProxy.doFilter(FilterToBeanProxy.java:98)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at net.sourceforge.subsonic.filter.RequestEncodingFilter.doFilter(RequestEncodingFilter.java:25)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at net.sourceforge.subsonic.filter.ParameterDecodingFilter.doFilter(ParameterDecodingFilter.java:36)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at net.sourceforge.subsonic.filter.BootstrapVerificationFilter.doFilter(BootstrapVerificationFilter.java:36)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
+	at org.mortbay.jetty.Server.handle(Server.java:313)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:506)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:830)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:381)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:396)
+	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
+
