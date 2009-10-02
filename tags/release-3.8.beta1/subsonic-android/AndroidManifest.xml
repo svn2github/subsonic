@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:a="http://schemas.android.com/apk/res/android"
+          package="net.sourceforge.subsonic.android"
+          a:versionCode="1"
+          a:versionName="1.0">
+
+    <uses-permission a:name="android.permission.INTERNET"/>
+    <uses-permission a:name="android.permission.READ_PHONE_STATE"/>
+
+    <application a:label="Subsonic" a:icon="@drawable/launch">
+
+        <activity a:name=".activity.MainActivity"
+                  a:label="Subsonic"
+                  a:screenOrientation="portrait"
+                  a:launchMode="singleTask">
+            <intent-filter>
+                <action a:name="android.intent.action.MAIN"/>
+                <category a:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity a:name=".activity.SelectArtistActivity"
+                  a:label="Browse music"
+                  a:screenOrientation="portrait"/>
+
+        <activity a:name=".activity.SelectAlbumActivity"
+                  a:label="Browse music"
+                  a:screenOrientation="portrait"/>
+
+        <activity a:name=".activity.DownloadQueueActivity"
+                  a:label="Download queue"
+                  a:screenOrientation="portrait"
+                  a:launchMode="singleTask"/>
+
+        <activity a:name=".activity.StreamQueueActivity"
+                  a:label="Playlist"
+                  a:launchMode="singleTask"
+                  a:screenOrientation="portrait"/>
+
+        <activity a:name=".activity.SettingsActivity"
+                  a:label="Settings"
+                  a:launchMode="singleTask"
+                  a:screenOrientation="portrait"/>
+
+        <activity a:name=".activity.ErrorActivity"
+                  a:label="Error"
+                  a:launchMode="singleTask"
+                  a:screenOrientation="portrait"/>
+
+        <activity a:name=".activity.HelpActivity"
+                  a:label="Help"
+                  a:launchMode="singleTask"
+                  a:screenOrientation="portrait"/>
+
+        <service a:name=".service.DownloadService"
+                 a:label="Download"/>
+
+        <service a:name=".service.StreamService"
+                 a:label="Stream"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+              a:orientation="vertical"
+              a:layout_width="fill_parent"
+              a:layout_height="fill_parent">
+
+    <ListView a:id="@+id/select_album_entries"
+              a:textFilterEnabled="true"
+              a:layout_width="fill_parent"
+              a:layout_height="0dip"
+              a:layout_weight="1.0"/>
+
+    <LinearLayout a:orientation="horizontal"
+                  a:layout_width="fill_parent"
+                  a:layout_height="wrap_content"
+                  a:gravity="center_horizontal"
+                  a:paddingTop="10dip">
+
+        <ImageButton a:id="@+id/select_album_selectallornone"
+                     a:src="@drawable/playlist_select"
+                     a:paddingLeft="15dp"
+                     a:paddingRight="15dp"
+                     a:layout_marginRight="10dp"
+                     a:visibility="gone"
+                     a:layout_width="wrap_content"
+                     a:layout_height="fill_parent"/>
+
+        <ImageButton a:id="@+id/select_album_play"
+                     a:src="@drawable/playlist_play"
+                     a:paddingLeft="15dp"
+                     a:paddingRight="15dp"
+                     a:layout_marginRight="10dp"
+                     a:visibility="gone"
+                     a:enabled="false"
+                     a:layout_width="wrap_content"
+                     a:layout_height="fill_parent"/>
+
+        <ImageButton a:id="@+id/select_album_add"
+                     a:src="@drawable/playlist_add"
+                     a:paddingLeft="15dp"
+                     a:paddingRight="15dp"
+                     a:layout_marginRight="10dp"
+                     a:visibility="gone"
+                     a:enabled="false"
+                     a:layout_width="wrap_content"
+                     a:layout_height="fill_parent"/>
+
+        <ImageButton a:id="@+id/select_album_download"
+                     a:src="@drawable/download"
+                     a:paddingLeft="15dp"
+                     a:paddingRight="15dp"
+                     a:visibility="gone"
+                     a:enabled="false"
+                     a:layout_width="wrap_content"
+                     a:layout_height="fill_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
