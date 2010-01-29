@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+              a:orientation="vertical"
+              a:layout_width="fill_parent"
+              a:layout_height="fill_parent">
+
+    <LinearLayout
+            a:orientation="horizontal"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:layoutAnimation="@anim/layout_slide_down">
+        <ImageView
+                a:layout_width="wrap_content"
+                a:layout_height="fill_parent"
+                a:layout_marginTop="20dip"
+                a:layout_weight="1"
+                a:src="@drawable/subsonic_white"/>
+        <TextView
+                a:id="@+id/main_version"
+                a:layout_width="wrap_content"
+                a:layout_height="fill_parent"
+                a:layout_marginTop="6dip"
+                a:layout_marginRight="6dip"
+                a:layout_gravity="top|right"
+                a:textSize="11dip"/>
+    </LinearLayout>
+
+    <include layout="@layout/main_buttons"/>
+
+    <LinearLayout a:orientation="horizontal"
+                  a:layout_width="fill_parent"
+                  a:layout_height="wrap_content">
+
+        <ImageView
+                a:id="@+id/main_now_playing"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:src="@drawable/now_playing_selector"
+                a:focusable="true"
+                a:gravity="left"/>
+
+        <TextView
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_weight="1"/>
+
+        <ImageView
+                a:id="@+id/main_settings"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:src="@drawable/settings_selector"
+                a:focusable="true"/>
+
+        <TextView
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_weight="1"/>
+
+        <ImageView
+                a:id="@+id/main_help"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:src="@drawable/help_selector"
+                a:focusable="true"
+                a:gravity="right"/>
+    </LinearLayout>
+</LinearLayout>
+
