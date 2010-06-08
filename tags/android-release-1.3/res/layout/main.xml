@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+              a:orientation="vertical"
+              a:layout_width="fill_parent"
+              a:layout_height="fill_parent">
+
+    <ImageView
+            a:src="@drawable/subsonic_white"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:paddingTop="10dip"
+            a:paddingBottom="10dip"
+            a:layout_gravity="center_horizontal"
+            a:background="@drawable/menubar_button_disabled"/>
+
+    <View
+            a:layout_width="fill_parent"
+            a:layout_height="1px"
+            a:background="@color/dividerColor"/>
+
+    <ListView
+            a:id="@+id/main_list"
+            a:layout_width="fill_parent"
+            a:layout_height="0dip"
+            a:layout_weight="1.0"/>
+
+    <include layout="@layout/button_bar"/>
+
+</LinearLayout>
+
